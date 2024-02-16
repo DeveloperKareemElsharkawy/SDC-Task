@@ -17,7 +17,33 @@ To get started with this project, follow these steps:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone git@github.com:DeveloperKareemElsharkawy/SDC-Task.git
-
+    git clone git@github.com:DeveloperKareemElsharkawy/SDC-Task.git
+   ```
 
  
+2. Run Composer
+   ```bash
+   composer update
+   ```
+
+2. Make .env File
+   ```bash
+    cp .env.example .env
+    php artisan key:generate
+   ```
+
+3. add Telegram Token For Notifications
+   ```bash
+        TELEGRAM_BOT_TOKEN="6830750936:AAE6kWAHT8XrTvL32OuUyE4ggfovRpMpiCE"
+   ```
+
+4. Run migration
+   ```bash
+        php artisan migrate
+   ```
+5. import Postman Collection From Link Or From the Repository  File : Auth System SDC APP  Task.postman_collection
+  ```bash
+https://elements.getpostman.com/redirect?entityId=21322026-6135900c-ed56-4428-9eb3-12d3bfebcd78&entityType=collection
+
+
+    ```
