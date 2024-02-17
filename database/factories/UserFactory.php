@@ -23,11 +23,15 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
+        $password = Hash::make('password');
+        $mobileNumber = '05' . $this->faker->unique()->numberBetween(10000000, 99999999);
+
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
+            'name' => $this->faker->name(),
+            'email' => $this->faker->unique()->safeEmail(),
+            'mobile' => $mobileNumber, // Use custom method from FakerSaudiMobileProvider
             'email_verified_at' => now(),
-            'password' => static::$password ??= Hash::make('password'),
+            'password' => $password,
             'remember_token' => Str::random(10),
         ];
     }

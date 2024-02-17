@@ -29,7 +29,7 @@ class OldPassword implements ValidationRule
      */
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        if (!Hash::check($value, auth()->user()->password) || !Hash::check($value, auth()->user()->temp_password) ){
+        if (!Hash::check($value, auth()->user()->password) || (auth()->user()->temp_password && !Hash::check($value, auth()->user()->temp_password))) {
             $fail('كلمة المرور القديمة غير صحيحة');
         }
 
