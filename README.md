@@ -58,6 +58,7 @@ To get started with this project, follow these steps:
     php artisan test
 ```
 
-6. Import the Postman collection using the provided link or from the repository file named `Auth System SDC APP Task.postman_collection`:
+
+7. Import the Postman collection using the provided link or from the repository file named `Auth System SDC APP Task.postman_collection`:
    - [Postman Collection Link](https://elements.getpostman.com/redirect?entityId=21322026-6135900c-ed56-4428-9eb3-12d3bfebcd78&entityType=collection)
 
