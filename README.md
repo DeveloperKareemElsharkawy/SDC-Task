@@ -54,9 +54,9 @@ To get started with this project, follow these steps:
    ```
 
 5. Run Unit Test
-```bash
-    php artisan test
-```
+    ```bash
+        php artisan test
+    ```
 
 
 7. Import the Postman collection using the provided link or from the repository file named `Auth System SDC APP Task.postman_collection`:
